@@ -48,7 +48,8 @@ for (let i = 0; i < 1200; i += 1) {
 root.innerHTML = divsHTML;
 
 document.querySelectorAll("div:not(#root)").forEach((div) => {
-  div.addEventListener("mouseover", () => {
-    console.log("hi");
+  div.addEventListener("mouseover", ({ target }) => {
+    const currentTarget = target;
+    currentTarget.innerText = "hi";
   });
 });
