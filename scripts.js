@@ -35,8 +35,6 @@ const emojis = [
   "🕊",
 ];
 
-const squiggly = "〰";
-
 const root = document.querySelector("#root");
 
 let divsHTML = "";
